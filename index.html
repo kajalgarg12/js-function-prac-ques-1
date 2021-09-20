@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+   //function findFirstUnique(arr) 
+        function unique(arr){
+  return arr.find((value) =>{
+            return arr.indexOf(value) === arr.lastIndexOf(value);
+        }) || null;
+}
+var x =  [9,2,100,3,2,6,6];
+console.log('the first unique number of given array  ' + unique(x));
+
+//function rightrotate
+function Rotate(arr,n){
+     arr=arr.concat(arr.splice(0,arr.indexOf(n)));
+     return arr
+ }
+let b =[1,2,3,4,5]
+console.log('the after rotation from given number '+ Rotate(b,3));
+
+// output "the after rotation from given number 3,4,5,1,2"
+</script>
+
+  
+</body>
+</html>
